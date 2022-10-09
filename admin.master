@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin_admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Admin Control Panel</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "top_nav", 
+	orientation: 'h', 
+	classname: 'ddsmoothmenu', 
+	
+	contentsource: "markup" 
+})
+
+</script>
+
+</head>
+
+<body>
+<form id="nk2" runat="server">
+<div id="templatemo_body_wrapper">
+<div id="templatemo_wrapper">
+
+	<div id="templatemo_header">
+    	<div id="site_title"><h1><a href="#">Online Bazaar</a></h1></div>
+        
+       
+    </div> 
+    
+    <div id="templatemo_menubar">
+    	<div id="top_nav" class="ddsmoothmenu">
+            <ul>
+                <li><a href="admin_home.aspx">Home</a></li>
+                <li><a href="#">News Update</a>
+                    
+                </li>
+               <li><a href="Default.aspx" class="selected">Logout</a></li>
+            </ul>
+            <br style="clear: left" />
+        </div> 
+        
+    </div> 
+    
+    <div id="templatemo_main">
+    	<div id="sidebar" class="float_l">
+        	<div class="sidebar_box"><span class="bottom"></span>
+            	<h3>Categories</h3>   
+                <div class="content"> 
+                	<ul class="sidebar_list">
+                    	<li class="first"><a href="add_city_state.aspx">Add City and State</a></li>
+                        <li><a href="register_user.aspx">Register Customer</a></li>
+                        <li><a href="apporve_cus.aspx">Approved Customer</a></li>
+                        <li><a href="products.aspx">Products</a></li>
+                        <li><a href="apporve_produtcs.aspx">Approved Products</a></li>
+                        <li><a href="#">News Update</a></li>
+                        
+                        <li>&nbsp;<asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Logout</asp:LinkButton></li>
+                       
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div id="content" class="float_r">
+        	<h1>
+                <span style="color: #cc0000"><span style="color: #3399cc">A</span><span style="color: #000000">dmin</span> 
+                    <span style="color: #3399cc">C</span><span style="color: #000000">ontrol</span>
+                    <span style="color: #3399cc">
+                    P</span><span style="color: #000000">anel</span></span></h1>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        
+        
+        <div class="cleaner h40"></div>
+        
+       
+            
+        </div> 
+        <div class="cleaner"></div>
+    </div> 
+    
+    <div id="templatemo_footer">
+    	
+
+		Copyright © 2022<a href="#">Social Bazaar</a> 
+    	
+    </div> 
+    
+</div> 
+</div> 
+</form>
+</body>
+</html>

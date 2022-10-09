@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Social Bazaar ::For your Dearms</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "top_nav",
+	orientation: 'h',
+	classname: 'ddsmoothmenu', 
+	
+	contentsource: "markup" 
+})
+
+</script>
+
+</head>
+
+<body>
+<form id="nk" runat="server">
+<div id="templatemo_body_wrapper">
+<div id="templatemo_wrapper">
+
+	<div id="templatemo_header">
+    	<div id="site_title"><h1><a href="#" style="text-decoration:none">&nbsp;Online Bazaar</a></h1></div>
+        
+        <div class="cleaner"></div>
+    </div> 
+    
+    <div id="templatemo_menubar">
+    	<div id="top_nav" class="ddsmoothmenu">
+            <ul>
+                <li><a href="Default.aspx" class="selected">Home</a></li>
+                <li><a href="about.aspx" >About Us</a></li>
+                <li><a href="Social_Bazaar_Products.aspx">Products</a></li>
+               
+                <li><a href="cus_login.aspx">Customer Login</a></li>
+                <li><a href="admin_login.aspx">AdminLogin</a></li>
+                <li><a href="contact_us.aspx">Contact Us</a></li>
+            </ul>
+            
+        </div> 
+        
+    </div> 
+    
+    <div id="templatemo_main">
+    	<div id="sidebar" class="float_l">
+        	<div class="sidebar_box"><span class="bottom"></span>
+            	<h3>
+                    <span style="color: #ff0033">Latest News......</span></h3>   
+               <div class="content"> 
+                	<ul class="sidebar_list">
+                    	
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div id="content" class="float_r">
+        	<div id="slider-wrapper">
+                <div id="slider" class="nivoSlider">
+                    <img src="images/slider/02.jpg" alt="" title="Social Bazaar: Various Products Online Store"/>
+                    <a href="#"><img src="images/slider/01.jpg" alt="" title="Social Bazaar: Various Products Online Store" /></a>
+                    <img src="images/slider/03.jpg" alt="" title="Social Bazaar: Various Products Online Store"/>
+                    <img src="images/slider/04.jpg" alt="" title="Social Bazaar: Various Products Online Store" />
+                </div>
+                <div id="htmlcaption" class="nivo-html-caption">
+                    <strong>Social Bazaar</strong> Various Products Online Store<em></em>  .
+                </div>
+            </div>
+            <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+            <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+            <script type="text/javascript">
+            $(window).load(function() {
+                $('#slider').nivoSlider();
+            });
+            </script>
+        	
+           
+            
+            <div class="cleaner">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+                 	
+        	
+                    	
+                    	
+        </div> 
+        <div class="cleaner"></div>
+    </div> 
+    
+    <div id="templatemo_footer">
+    	<p><a href="#">Home</a> | <a href="#">Products</a> | <a href="#">About</a> | <a href="#">FAQs</a> |<a href="#">Contact Us</a>
+		</p>
+
+    	Copyright © 2022 <a href="#">Social Bazaar</a> </div> 
+    
+</div> 
+</div> 
+</form>
+</body>
+</html>
